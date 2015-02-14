@@ -35,8 +35,7 @@ public class MultiTouchHandler {
             }
         };
         touchEventPool = new Pool<TouchEvent>(factory, 100);
-        view.setOnTouchListener(this);
-
+        view.setOnTouchListener((View.OnTouchListener) this);
         this.scaleX = scaleX;
         this.scaleY = scaleY;
     }
