@@ -18,7 +18,7 @@ import java.io.OutputStream;
 /**
  * Created by Rafa on 12/02/2015.
  */
-public class AndroidFileIO implements FileIo{
+public class AndroidFileIO implements FileIo {
     Context context;
     AssetManager assets;
     String externalStoragePath;

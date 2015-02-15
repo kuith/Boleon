@@ -16,7 +16,7 @@ import com.digitalhollows.boleon.framework.Pool.PoolObjectFactory;
  * Created by Rafa on 14/02/2015.
  */
 @TargetApi(5)
-public class MultiTouchHandler {
+public class MultiTouchHandler implements TouchHandler{
     private static final int MAX_TOUCHPOINTS = 10;
     boolean[] isTouched = new boolean[MAX_TOUCHPOINTS];
     int[] touchX = new int[MAX_TOUCHPOINTS];
@@ -35,7 +35,7 @@ public class MultiTouchHandler {
             }
         };
         touchEventPool = new Pool<TouchEvent>(factory, 100);
-        view.setOnTouchListener((View.OnTouchListener) this);
+        view.setOnTouchListener(this);
         this.scaleX = scaleX;
         this.scaleY = scaleY;
     }

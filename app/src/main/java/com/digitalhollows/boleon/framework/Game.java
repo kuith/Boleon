@@ -6,7 +6,7 @@ package com.digitalhollows.boleon.framework;
 public interface Game {
     public Input getInput();
 
-    public FileIo getFileIO();
+    public FileIo getFileIo();
 
     public Graphics getGraphics();
 
