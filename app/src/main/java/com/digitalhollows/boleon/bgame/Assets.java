@@ -1,6 +1,7 @@
 package com.digitalhollows.boleon.bgame;
 
 import com.digitalhollows.boleon.framework.Pixmap;
+import com.digitalhollows.boleon.framework.Sound;
 
 /**
  * Created by Rafa on 23/02/2015.
@@ -26,4 +27,6 @@ public class Assets {
     public static Pixmap versus_triangle;
     public static Pixmap versusPentagon;
     public static Pixmap versusSquare;
+
+    public static Sound click;
 }
